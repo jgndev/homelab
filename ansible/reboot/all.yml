@@ -1,0 +1,8 @@
+---
+- name: Reboot all nodes in the home lab
+  hosts: homelab
+  become: yes
+  tasks:
+    - name: Reboot
+      ansible.builtin.reboot:
+        msg: "Restarted all homelab nodes via Ansible"

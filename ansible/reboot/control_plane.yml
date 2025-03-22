@@ -1,0 +1,8 @@
+---
+- name: Reboot all nodes in the home lab
+  hosts: control_plane
+  become: yes
+  tasks:
+    - name: Reboot
+      ansible.builtin.reboot:
+        msg: "Restarted control-plane node via Ansible"

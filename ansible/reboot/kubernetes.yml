@@ -1,0 +1,8 @@
+---
+- name: Reboot all nodes in the home lab
+  hosts: kubernetes
+  become: yes
+  tasks:
+    - name: Reboot
+      ansible.builtin.reboot:
+        msg: "Restarted all kubernetes nodes via Ansible"

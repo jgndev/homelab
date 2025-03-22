@@ -16,10 +16,10 @@ steeldust
 reride
 roughstock
 
-[contoller]
+[control_plane]
 steeldust
 
-[workers]
+[worker_nodes]
 reride
 roughstock
 
