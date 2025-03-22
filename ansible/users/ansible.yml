@@ -1,0 +1,23 @@
+---
+- name: Set up ansible user and sudo privileges
+  hosts: homelab
+  become: yes
+  vars:
+    ansible_password: "YourPasswordHere"
+  tasks:
+    - name: Create ansible user with password and home directory
+      ansible.builtin.user:
+        name: ansible
+        password: "{{ ansible_password | password_hash('sha512') }}"
+        shell: /bin/bash
+        create_home: yes
+        state: present
+
+    - name: Grant ansible user sudo privileges via sudoers.d
+      ansible.builtin.copy:
+        content: "ansible ALL=(ALL) NOPASSWD:ALL"
+        dest: /etc/sudoers.d/ansible
+        mode: "0440"
+        owner: root
+        group: root
+        validate: "/usr/sbin/visudo -cf %s"

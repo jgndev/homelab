@@ -1,0 +1,13 @@
+---
+- name: Enable EDITOR choice in visudo
+  hosts: homelab
+  become: yes
+  tasks:
+    # Enable the user's defined EDITOR when running visudo, default is nano
+    - name: Enable EDITOR choice when running visudo
+      ansible.builtin.lineinfile:
+        path: /etc/sudoers
+        regexp: '^#Defaults:%sudo env_keep \+= "EDITOR"'
+        line: 'Defaults:%sudo env_keep += "EDITOR"'
+        validate: "/usr/sbin/visudo -cf %s"
+      become: yes
