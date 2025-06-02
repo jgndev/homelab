@@ -198,7 +198,8 @@ kubectl get pods --all-namespaces
 ## 📖 Documentation
 
 Additional documentation can be found in the `docs/` directory:
-- `kubectl-completion.md`: Kubectl shell completion setup
+- [Kubectl Completion Setup](docs/kubectl-completion.md): Kubectl shell completion setup
+- [Netplan Configuration](docs/netplan-configuration.md): Netplan configuration of static IPs using Wi-Fi
 
 ## 🤝 Contributing
 
