@@ -60,7 +60,8 @@ homelab/
 │   ├── reboot/               # Reboot management
 │   └── visudo/               # Sudo configuration
 ├── docs/                     # Documentation & notes
-│   └── kubectl-completion.md
+│   ├── kubectl-completion.md
+│   ├── netplan-configuration.md
 └── 100-network.yaml          # Netplan network configuration
 ```
 
