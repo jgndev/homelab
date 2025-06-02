@@ -1,0 +1,132 @@
+# Ansible
+*.retry
+.vault_pass
+.vault_password
+vault_pass.txt
+vault_password.txt
+ansible_vault_pass
+host_vars/*/vault.yml
+group_vars/*/vault.yml
+
+# SSH Keys and Secrets
+*.pem
+*.key
+*_rsa
+*_rsa.pub
+*_ed25519
+*_ed25519.pub
+id_*
+ssh_host_*
+authorized_keys
+known_hosts
+
+# Configuration files with sensitive data
+inventory.ini.bak
+inventory.yml.bak
+*.conf.bak
+*config*.yml.bak
+.env
+.env.local
+.env.production
+secrets.yml
+secrets.yaml
+
+# Kubernetes
+*.kubeconfig
+kubeconfig*
+.kube/
+kube_config_*
+k8s-admin.conf
+admin.conf
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+.#*
+\#*\#
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+logs/
+ansible.log
+ansible-*.log
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+*.tmp
+*.temp
+*.pid
+
+# Backup files
+*.bak
+*.backup
+*~
+*.orig
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Terraform (if used)
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+.terraform.lock.hcl
+
+# Docker
+.dockerignore
+
+# Network configuration with credentials
+*network*.yaml.bak
+*netplan*.yaml.bak
+
+# Local testing and development
+test-inventory.ini
+local-*.yml
+debug.yml
+scratch.* 
