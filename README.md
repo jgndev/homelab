@@ -45,8 +45,8 @@ This homelab serves as my deep dive into:
 
 ```
 homelab/
-├── ansible/                    # Ansible automation
-│   ├── inventory.ini          # Infrastructure inventory
+├── ansible/                  # Ansible automation
+│   ├── inventory.ini         # Infrastructure inventory
 │   ├── ansible.cfg           # Ansible configuration
 │   ├── kubernetes/           # K8s deployment playbooks
 │   │   └── install_dependencies.yml
@@ -59,9 +59,9 @@ homelab/
 │   │   └── kubernetes.yml
 │   ├── reboot/               # Reboot management
 │   └── visudo/               # Sudo configuration
-├── notebook/                 # Documentation & notes
+├── docs/                     # Documentation & notes
 │   └── kubectl-completion.md
-└── 100-network.yaml         # Netplan network configuration
+└── 100-network.yaml          # Netplan network configuration
 ```
 
 ## ⚙️ Setup & Usage
@@ -210,4 +210,4 @@ See [LICENSE.md](LICENSE.md) for details.
 
 ---
 
-*Built with 🤓 for learning and exploration*
+*Built with 🤓for learning and exploration*
