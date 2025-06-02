@@ -210,4 +210,4 @@ See [LICENSE.md](LICENSE.md) for details.
 
 ---
 
-*Built with 🤓for learning and exploration*
+*Built with 🤓 for learning and exploration*
